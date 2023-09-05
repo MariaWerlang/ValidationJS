@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="js.js"></script>
+</head>
+
+<body>
+    
+
+    <div class="container-xxl">
+
+        <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark"">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                VALIDAÇÃO DE FORMULÁRIO
+              </a>
+            </div>
+          </nav>
+
+          <br>
+
+        <form name="formulario">
+
+            <label for="nome" class="form-label">Nome</label>
+            <input class="form-control border border-secondary" type="text" id="nome" name="nome" placeholder="Digite seu nome..." aria-label="default input example" required><br>
+    
+    
+            <label for="endereco" class="form-label">Endereço</label>
+            <input class="form-control border border-secondary" type="text" id="endereco" name="endereco" placeholder="Digite seu endereço..." aria-label="default input example" required><br>
+    
+    
+            <label for="bairro" class="form-label">Bairro</label>
+            <input class="form-control border border-secondary" type="text" id="bairro" name="bairro" placeholder="Digite seu bairro..." aria-label="default input example" required><br>
+    
+    
+            <label for="cep" class="form-label">CEP</label>
+            <input class="form-control border border-secondary" type="text" id="cep" name="cep" placeholder="Digite seu CEP..." minlength="8" maxlength="9" aria-label="default input example" required><br>
+    
+     
+            <label for="cidade" class="form-label">Cidade</label>
+            <input class="form-control border border-secondary" type="text" id="cidade" name="cidade" placeholder="Digite seu cidade..." aria-label="default input example" required><br>
+    
+    
+            <label for="estado" class="form-label">Estado</label>
+            <select class="form-select border border-secondary" id="estado" name="estado" aria-label="Default select example">
+                <option selected value="">Escolha um estado...</option>
+                <option value="AC">AC - Acre</option>
+                <option value="AL">AL - Alagoas</option>
+                <option value="AP">AP - Amapá</option>
+                <option value="AM">AM - Amazonas</option>
+                <option value="BA">BA - Bahia</option>
+                <option value="CE">CE - Ceará</option>
+                <option value="DF">DF - Distrito Federal</option>
+                <option value="ES">ES - Espírito Santo</option>
+                <option value="GO">GO - Goiás</option>
+                <option value="MA">MA - Maranhão</option>
+                <option value="MT">MT - Mato Grosso</option>
+                <option value="MS">MS - Mato Grosso do Sul</option>
+                <option value="MG">MG - Minas Gerais</option>
+                <option value="PA">PA - Pará</option>
+                <option value="PB">PB - Paraíba</option>
+                <option value="PR">PR - Paraná</option>
+                <option value="PE">PE - Pernambuco</option>
+                <option value="PI">PI - Piauí</option>
+                <option value="RJ">RJ - Rio de Janeiro</option>
+                <option value="RN">RN - Rio Grande do Norte</option>
+                <option value="RS">RS - Rio Grande do Sul</option>
+                <option value="RO">RO - Rondônia</option>
+                <option value="RR">RR - Roraima</option>
+                <option value="SC">SC - Santa Catarina</option>
+                <option value="SP">SP - São Paulo</option>
+                <option value="SE">SE - Sergipe</option>
+                <option value="TO">TO - Tocantins</option>
+              </select><br>
+    
+    
+            <label for="telefoneFixo" class="form-label">Telefone Fixo</label>
+            <input class="form-control border border-secondary" type="text" id="telefoneFixo" name="telefoneFixo" placeholder="Digite seu telefone fixo..." aria-label="default input example" required><br>
+    
+    
+            <label for="celular" class="form-label">Celular</label>
+            <input class="form-control border border-secondary" type="text" id="celular" name="celular" placeholder="Digite seu celular..." aria-label="default input example" required><br>
+    
+    
+            <label for="rg" class="form-label">RG</label>
+            <input class="form-control border border-secondary" type="text" id="rg" name="rg" placeholder="Digite seu RG..." minlength="9" maxlength="12" aria-label="default input example" required><br>
+    
+    
+            <label for="cpf" class="form-label">CPF</label>
+            <input class="form-control border border-secondary" type="text" id="cpf" name="cpf" placeholder="Digite seu CPF..." aria-label="default input example" required><br>
+    
+            <button type="submit" class="btn btn-dark" value="Cadastrar" onclick="validarFormulario()">Cadastrar</button>
+            
+    
+        </form>
+    </div>
+    
+
+</body>
+
+</html>
+
+ 
